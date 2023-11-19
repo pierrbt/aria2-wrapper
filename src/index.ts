@@ -44,7 +44,7 @@ class Aria2 {
   forcePauseAll = (): Promise<'OK'> => this.sendRequest('aria2.forcePauseAll');
   unpause = (gid: string): Promise<string> => this.sendRequest('aria2.unpause', [gid]);
   unpauseAll = (): Promise<'OK'> => this.sendRequest('aria2.unpauseAll');
-  tellStatus = (gid: string, keys?: string[]): Promise<Status> => this.sendRequest('aria2.tellStatus', [gid], keys);
+  tellStatus = (gid: string, keys?: string[]): Promise<Status> => this.sendRequest('aria2.tellStatus', gid, keys);
   tellActive = (keys?: string[]): Promise<Status[]> => this.sendRequest('aria2.tellActive', [], keys);
   tellWaiting = (offset: number, num: number, keys?: string[]): Promise<Status[]> => this.sendRequest('aria2.tellWaiting', [offset, num], keys);
   tellStopped = (offset: number, num: number, keys?: string[]): Promise<Status[]> => this.sendRequest('aria2.tellStopped', [offset, num], keys);
