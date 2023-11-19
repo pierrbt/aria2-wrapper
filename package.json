@@ -1,6 +1,6 @@
 {
   "name": "aria2-wrapper",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A fully-typed wrapper for aria2 JSON-RPC API written in TypeScript.",
   "repository": "https://github.com/pierrbt/aria2-wrapper",
   "main": "dist/index.js",

@@ -35,7 +35,7 @@ class Aria2 {
     forcePauseAll = () => this.sendRequest('aria2.forcePauseAll');
     unpause = (gid) => this.sendRequest('aria2.unpause', [gid]);
     unpauseAll = () => this.sendRequest('aria2.unpauseAll');
-    tellStatus = (gid, keys) => this.sendRequest('aria2.tellStatus', [gid], keys);
+    tellStatus = (gid, keys) => this.sendRequest('aria2.tellStatus', gid, keys);
     tellActive = (keys) => this.sendRequest('aria2.tellActive', [], keys);
     tellWaiting = (offset, num, keys) => this.sendRequest('aria2.tellWaiting', [offset, num], keys);
     tellStopped = (offset, num, keys) => this.sendRequest('aria2.tellStopped', [offset, num], keys);
