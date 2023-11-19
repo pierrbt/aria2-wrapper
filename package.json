@@ -1,0 +1,12 @@
+{
+  "name": "aria2-wrapper",
+  "version": "1.0.0",
+  "description": "A fully-typed wrapper for aria2 JSON-RPC API written in TypeScript.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "author": "Pierre BIDET",
+  "license": "MIT"
+}
