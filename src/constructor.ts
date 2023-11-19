@@ -1,5 +1,3 @@
-
-
 interface Aria2Constructor {
   host?: string;
   port?: number;
